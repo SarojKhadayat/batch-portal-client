@@ -23,9 +23,19 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/css/hamburgers/hamburgers.css",
+              "node_modules/font-awesome/css/font-awesome.min.css",
+              "src/assets/fonts/batch-icons/css/batch-icons.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/css/custom.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery-3.1.1.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/js/popper.min.js",
+              "src/assets/js/mdb.min.js"
+            ]
           },
           "configurations": {
             "production": {

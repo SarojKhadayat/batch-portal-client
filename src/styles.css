@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+.navbar-expand-lg,.main-content {
+    margin-left: 210px;
+}
+
+.badge-primary {
+     background-color: #ec008c; 
+}
+badge {
+    box-shadow: none;
+    padding: .35rem .5rem;
+}
+.badge-pill {
+     padding-right: .6em; 
+     padding-left: .6em;
+    border-radius: 10rem;
+}

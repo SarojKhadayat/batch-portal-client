@@ -1,0 +1,42 @@
+<div class="right-column">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand d-block d-sm-block d-md-block d-lg-none" href="#">
+          <img src="/assets/img/verscend_reversed_pink-v1.svg" width="145" height="32.3" alt="Verscend">
+      </a>
+      <button class="hamburger hamburger--slider" type="button" data-target=".sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle Sidebar">
+          <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+          </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-header-content">
+          <ul class="navbar-nav navbar-language-translation mr-auto">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbar-dropdown-menu-link" data-toggle="dropdown" data-flip="false" aria-haspopup="true" aria-expanded="false">
+                      <i class="batch-icon batch-icon-book-alt-"></i>
+                      <span id="selected-client-code">{{selectedClientCode}}</span>
+                  </a>
+
+                  <ul id="client-dropdown" class="dropdown-menu scrollable-menu" aria-labelledby="navbar-dropdown-menu-link">
+                                  <li *ngFor="let clientCode of activeClients">
+                                      <a class="dropdown-item client-dropdown-item" (click)="changeClientCode(clientCode)">{{clientCode}}</a></li>
+                  </ul>
+              </li>
+          </ul>
+          <ul class="navbar-nav ml-5 navbar-profile">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbar-dropdown-navbar-profile" data-toggle="dropdown" data-flip="false" aria-haspopup="true" aria-expanded="false">
+                      <div class="profile-name">
+                          saroj
+                      </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbar-dropdown-navbar-profile">
+                      <li><a class="dropdown-item" href="/">Logout</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  <main class="main-content p-5" role="main">
+          <router-outlet></router-outlet>
+  </main>
+</div>
